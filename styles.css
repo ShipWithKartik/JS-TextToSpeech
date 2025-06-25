@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+
+
+.body{
+    padding:20px;
+    width:100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #3a1c71, #d76d77, #ffaf7b);
+    margin-inline:auto;
+}
+.container{
+    width:600px;
+    margin-inline: auto;
+}
+.header{
+    display: flex;
+    gap:10px;
+}
+h1{
+    color:white;
+    font-weight: 700;
+    margin-top: 100px;
+}
+.color-heading{
+    color:orangered;
+}
+
+/* Glassmorphic effect for the text area */
+#text-input{
+    margin-top:20px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Ensure compatibility with Safari */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the text area */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Light border for the frosted effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Full width */
+    height: 300px; /* Set the height */
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 16px; /* Font size */
+    color: white; /* Text color */
+    resize: none; /* Disable resizing */
+    outline: none; /* Remove outline */
+}
+
+/* Optional: Add some styles for the text area focus state */
+#text-input:focus {
+    border-color: rgba(255, 255, 255, 0.5); /* Brighter border on focus */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* More prominent shadow on focus */
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.language-selector{
+    padding:20px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply the blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Ensure compatibility with Safari */
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Light border for the frosted effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.speak-button{
+    width:150px;
+    border-radius:30px;
+    border:none;
+    background-color:orangered;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-out;
+    color:white;
+    font-size:16px;
+}
+.speak-button:hover{
+    transform: scale(0.95);
+}
